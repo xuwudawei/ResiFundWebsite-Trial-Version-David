@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResiFund - Own a Share in the Future-Proof City</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="logo-text">ResiFund</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="cta-button">Invest Now</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s;"></div>
+                <div class="floating-element" style="--delay: 2s;"></div>
+                <div class="floating-element" style="--delay: 4s;"></div>
+                <div class="floating-element" style="--delay: 6s;"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Own a Share</span><br>
+                        in the <span class="highlight">Future-Proof City</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Democratize climate adaptation by investing as little as <strong>$10</strong> in tokenized climate-resilient infrastructure. Build resilience, earn returns, and empower communities worldwide.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">$10</span>
+                            <span class="stat-label">Minimum Investment</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Communities by 2030</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">$1.3T</span>
+                            <span class="stat-label">Climate Finance Gap</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="primary-button">
+                            <i class="fas fa-rocket"></i>
+                            Start Investing
+                        </button>
+                        <button class="secondary-button">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Solar Kit Deployment</h3>
+                                <p>Manila, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span>Funding Progress</span>
+                                <span>$8,450 / $10,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 84.5%;"></div>
+                            </div>
+                        </div>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">156</span>
+                                <span class="metric-label">Households</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.3t</span>
+                                <span class="metric-label">CO₂ Saved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Climate Finance Crisis</h2>
+                <p class="section-subtitle">Despite $1.3T in global climate finance, less than 10% reaches local adaptation projects where vulnerability is highest.</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-chart-line-down"></i>
+                    </div>
+                    <h3>Market Gap</h3>
+                    <p>High-risk communities are excluded from resilience investments, with only 3.5% of climate finance supporting the urban poor.</p>
+                    <div class="problem-stat">3.5%</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3>Social Gap</h3>
+                    <p>70% of city projects lack local participation, leading to solutions that fail due to low trust and poor community fit.</p>
+                    <div class="problem-stat">70%</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+                    <h3>Structural Gap</h3>
+                    <p>Existing tools are slow, centralized, and rigid. Communities can't access or guide infrastructure funding decisions.</p>
+                    <div class="problem-stat">Slow</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="about" class="solution-section">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2 class="section-title">Our Solution</h2>
+                    <p class="solution-description">
+                        ResiFund is a catalytic, decentralized climate finance platform that democratizes access to climate adaptation through tokenized micro-investments. We enable anyone to co-invest in critical climate-resilient infrastructure starting at just $10.
+                    </p>
+                    <div class="solution-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Tokenized Micro-Investments</h4>
+                                <p>Fractional ownership through ERC-20 tokens on Polygon blockchain</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Transparent Impact Tracking</h4>
+                                <p>Real-time dashboards with IoT sensors and satellite data</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Community Governance</h4>
+                                <p>Local ownership and decision-making in project design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-visual">
+                    <div class="solution-diagram">
+                        <div class="diagram-node investor">
+                            <i class="fas fa-user"></i>
+                            <span>Investors</span>
+                        </div>
+                        <div class="diagram-arrow"></div>
+                        <div class="diagram-node platform">
+                            <i class="fas fa-coins"></i>
+                            <span>Tokens</span>
+                        </div>
+                        <div class="diagram-arrow"></div>
+                        <div class="diagram-node project">
+                            <i class="fas fa-hammer"></i>
+                            <span>Projects</span>
+                        </div>
+                        <div class="diagram-arrow"></div>
+                        <div class="diagram-node impact">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Kits Section -->
+    <section id="kits" class="kits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Climate-Ready Kits</h2>
+                <p class="section-subtitle">Modular, field-tested solutions designed to rapidly strengthen climate resilience in vulnerable communities.</p>
+            </div>
+            <div class="kits-grid">
+                <div class="kit-card">
+                    <div class="kit-icon flood">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Flood-Resilient Shelter Kit</h3>
+                    <p>Elevated structures and water-resistant materials to protect homes from flooding and storm surges.</p>
+                    <div class="kit-features">
+                        <span class="kit-feature">Elevated Design</span>
+                        <span class="kit-feature">Water-Resistant</span>
+                        <span class="kit-feature">Quick Deploy</span>
+                    </div>
+                </div>
+                <div class="kit-card">
+                    <div class="kit-icon solar">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Solar Access & Energy Kit</h3>
+                    <p>Distributed solar microgrids providing clean, reliable energy access to underserved communities.</p>
+                    <div class="kit-features">
+                        <span class="kit-feature">Microgrid</span>
+                        <span class="kit-feature">Battery Storage</span>
+                        <span class="kit-feature">IoT Monitoring</span>
+                    </div>
+                </div>
+                <div class="kit-card">
+                    <div class="kit-icon water">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water & Sanitation Kit</h3>
+                    <p>Smart water systems with filtration, storage, and efficient distribution for clean water access.</p>
+                    <div class="kit-features">
+                        <span class="kit-feature">Filtration</span>
+                        <span class="kit-feature">Smart Storage</span>
+                        <span class="kit-feature">Distribution</span>
+                    </div>
+                </div>
+                <div class="kit-card">
+                    <div class="kit-icon heat">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Urban Heat & Air Quality Kit</h3>
+                    <p>Cooling centers and air purification systems to combat urban heat islands and pollution.</p>
+                    <div class="kit-features">
+                        <span class="kit-feature">Cooling Centers</span>
+                        <span class="kit-feature">Air Purification</span>
+                        <span class="kit-feature">Green Spaces</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How ResiFund Works</h2>
+                <p class="section-subtitle">A simple, transparent process from investment to impact</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Project Selection</h3>
+                        <p>Communities and NGOs submit climate vulnerability data. Our AI-powered Resilience Viability Engine scores projects based on climate risk, equity, and SDG alignment.</p>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Asset Tokenization</h3>
+                        <p>Approved infrastructure is tokenized into ERC-20 tokens on Polygon blockchain. Investors can purchase fractional ownership starting at $10.</p>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Deployment & Monitoring</h3>
+                        <p>Verified partners deploy climate kits with IoT sensors and QR tracking. Real-time data feeds into live impact dashboards.</p>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Impact & Returns</h3>
+                        <p>Track measurable climate impact, community feedback, and financial returns. Continuous learning improves future projects.</p>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact</h2>
+                <p class="section-subtitle">Measurable results in climate resilience and community empowerment</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="impact-number" data-target="500">0</div>
+                    <div class="impact-label">Households Protected</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="impact-number" data-target="1250">0</div>
+                    <div class="impact-label">Tons CO₂ Avoided</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <div class="impact-number" data-target="25">0</div>
+                    <div class="impact-label">Projects Funded</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-number" data-target="15">0</div>
+                    <div class="impact-label">Communities Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Passionate experts driving climate resilience innovation</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Maureen Letlatsa</h3>
+                    <p class="member-role">Co-Founder & CEO</p>
+                    <p class="member-bio">Climate finance expert with 10+ years in sustainable development</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Hassan Gulfraz</h3>
+                    <p class="member-role">Co-Founder & CTO</p>
+                    <p class="member-bio">Blockchain architect specializing in tokenized infrastructure</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Patricia Huni</h3>
+                    <p class="member-role">Head of Community</p>
+                    <p class="member-bio">Community engagement specialist with grassroots experience</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Karim Soliman</h3>
+                    <p class="member-role">Impact Analyst</p>
+                    <p class="member-bio">Data scientist focused on climate resilience metrics</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Rim Cherkti</h3>
+                    <p class="member-role">Operations Lead</p>
+                    <p class="member-bio">Project management expert in climate adaptation</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Lala Aghayeva</h3>
+                    <p class="member-role">Partnership Director</p>
+                    <p class="member-bio">Strategic partnerships in climate finance and NGOs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Help Build the Future-Proof City</h2>
+                <p>Join thousands of investors making climate resilience accessible to all. Start with just $10 and make a real impact.</p>
+                <div class="cta-actions">
+                    <button class="primary-button large">
+                        <i class="fas fa-rocket"></i>
+                        Start Investing Today
+                    </button>
+                    <button class="secondary-button large">
+                        <i class="fas fa-download"></i>
+                        Download Whitepaper
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="logo-text">ResiFund</span>
+                    </div>
+                    <p>Democratizing climate adaptation through tokenized micro-investments in resilient infrastructure.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Climate Kits</a></li>
+                        <li><a href="#">Impact Dashboard</a></li>
+                        <li><a href="#">Tokenomics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:resifund@outlook.com">resifund@outlook.com</a></li>
+                        <li><a href="https://maureenletlatsa.wixsite.com/my-site-1" target="_blank">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ResiFund. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

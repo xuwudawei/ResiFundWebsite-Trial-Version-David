@@ -1,0 +1,139 @@
+ResiFund
+OWN A SHARE IN THE FUTURE-PROOF CITY
+Invest in Resilience-Own the Future.
+Senate Maureen Letlatsa
+Hassan Gulfraz
+Patricia Gamuchirai Huni 
+Lala Aghayeva 
+Cherkti Rim
+Karim Soliman 
+
+Small projects don’t attract investors
+Climate adaptation is underfunded
+Low trust in transparency and ESG accountability
+Lack of accessible, climate resilient infrastructure
+Problems
+
+Invest in Resilience-Own the Future.
+Global Climate Statistics
+Funding Exclusion: The Market Gap
+$1.3T in climate finance (OECD, 2023), but <10% reaches local adaptation
+Only 3.5% supports the urban poor
+(World Bank, 2023)
+Top-Down Solutions: The Structural Gap
+Existing tools are slow, centralized, and rigid
+Communities can’t access or guide infrastructure funding
+Community Disempowerment: The Social Gap
+70% of city projects lack local participation
+(World Bank, 2023)
+Solutions often fail due to low trust and poor fit
+
+Statistics
+
+Climate-Ready Kits
+Decentralized Climate Finance
+Our Solution
+Back to Agenda
+A platform where anyone can invest from $10 in local climate-resilient infrastructure
+Uses tokenized micro-investments (ERC-20) to fund real projects
+Flood shelters, Solar systems, Clean water & Cooling kits
+Transparent, Trackable Impact
+Live dashboards, photos, and metrics for every project
+QR & IoT-enabled kits ensure real-time updates
+Community-Owned 
+Resilience
+Partners with municipalities, NGOs, youth
+Empowers locals as co-investors & co-designers
+ResiFund = Web3 + Climate Kits + Community Power
+
+Product Architecture
+Tokenized fractional ownership (Polygon/Ethereum)	
+
+Resilience Scoring Engine using climate, community & cost data	
+
+Smart contracts, 2FA, real-time reporting	
+	
+Clean diagram showing flow: 
+$$ → Tokens → Project → Impact → Feedback.
+Back to Agenda
+https://maureenletlatsa.wixsite.com/my-site-1
+
+
+Our Prototype
+Back to Agenda
+https://maureenletlatsa.wixsite.com/my-site-1
+
+
+Our Timeline
+Pilot: 2–3 city deployments focusing on flood zones and underserved communities.
+Community-centered data feedback. 
+Partnerships (local NGOs, municipal governments and youth hubs)
+2028
+ Regional Expansion: Scaling to 10+ cities using feedback from pilot data..
+ Global Partnerships: Expansion into climate-vulnerable countries through partner networks (e.g. development banks, UN-Habitat, ICLEI cities)
+2030
+2026
+Months 1–3: Community onboarding, climate risk assessment, baseline data collection.
+
+ Months 4–6: Deployment of first kits (solar, water, housing), tokenized investment rollout.	
+
+Months 7–12: Real-time impact tracking, community feedback loops, stakeholder reporting.
+
+Impact & Business Model
+Back to Agenda
+Kits deployed.
+Lives protected.
+CO₂e avoided
+Projects funded
+Impact metrics
+Revenue model
+Transaction fees
+Institutional dashboards
+Analytics + reporting
+Chart with growth opportunity or TAM
+
+ResiFund & Competitors
+Back to Agenda
+Competitor
+Focus
+Limitation
+ResiFund Advantage
+Climate Bonds
+Institutional-only
+No local ownership
+Fractional micro-ownership
+Green Banks
+Top-down finance
+Slow & centralized
+Bottom-up, fast-track kits
+GoFundMe Projects
+Local-only, donation-based
+Not scalable, no ROI
+Traceable investment model
+
+Join us.
+$50,000 initial investment:
+3 additional Asia-Pacific communities
+reaching 500+ households
+
+Strategic partnerships:
+climate research labs
+Civic tech collaborators
+Municipal networks
+What does it enable?
+Funders and partners will have access to live impact data, climate investment dashboards, and community storytelling to to  to enhance ESG reporting or academic collaboration.
+
+Team 
+Hassan Gulfraz
+Maureen Letlatsa
+Patricia Huni
+Karim Soliman
+Rim Cherkti 
+Lala Aghayeva
+
+Help build the future-proof city  $10 at a time
+Resifund@outlook.com
+Email
+Website
+https://maureenletlatsa.wixsite.com/my-site-1
+
