@@ -20,18 +20,21 @@
                 <span class="logo-text">ResiFund</span>
             </div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
+                <a href="#" onclick="showSection('home')" class="nav-link">Home</a>
+                <a href="browse-projects.html" class="nav-link">Browse Projects</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#how-it-works" class="nav-link">How It Works</a>
                 <a href="#impact" class="nav-link">Impact</a>
                 <a href="#team" class="nav-link">Team</a>
                 <a href="#contact" class="nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-link" id="dashboardLink" style="display: none;">Dashboard</a>
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button class="cta-button">Invest Now</button>
+                <a href="#" onclick="openModal('loginModal')" class="cta-button" style="margin-right: 10px;">Login</a>
+                <a href="#" onclick="openModal('signupModal')" class="cta-button">Sign Up</a>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -44,11 +47,17 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
+            <div class="particle-system" id="particles"></div>
             <div class="floating-elements">
                 <div class="floating-element" style="--delay: 0s;"></div>
                 <div class="floating-element" style="--delay: 2s;"></div>
                 <div class="floating-element" style="--delay: 4s;"></div>
                 <div class="floating-element" style="--delay: 6s;"></div>
+            </div>
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
         <div class="container">
@@ -93,27 +102,27 @@
                                 <i class="fas fa-leaf"></i>
                             </div>
                             <div class="card-info">
-                                <h3>Solar Kit Deployment</h3>
-                                <p>Manila, Philippines</p>
+                                <h3>Flood Barrier System</h3>
+                                <p></p>
                             </div>
                         </div>
                         <div class="progress-section">
                             <div class="progress-info">
-                                <span>Funding Progress</span>
-                                <span>$8,450 / $10,000</span>
+                                <span>Funding Target</span>
+                                <span>$0 / $25,000</span>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 84.5%;"></div>
+                                <div class="progress-fill" style="width: 0%;"></div>
                             </div>
                         </div>
                         <div class="impact-metrics">
                             <div class="metric">
-                                <span class="metric-value">156</span>
+                                <span class="metric-value">500</span>
                                 <span class="metric-label">Households</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-value">2.3t</span>
-                                <span class="metric-label">CO₂ Saved</span>
+                                <span class="metric-value">12t</span>
+                                <span class="metric-label">CO₂ to Save</span>
                             </div>
                         </div>
                     </div>
@@ -121,6 +130,10 @@
             </div>
         </div>
     </section>
+
+
+
+
 
     <!-- Problem Section -->
     <section id="problem" class="problem-section">
@@ -340,37 +353,125 @@
     <section id="impact" class="impact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Impact</h2>
-                <p class="section-subtitle">Measurable results in climate resilience and community empowerment</p>
+                <h2 class="section-title">Projected Impact</h2>
+                <p class="section-subtitle">Our vision for climate resilience transformation</p>
             </div>
             <div class="impact-grid">
                 <div class="impact-card">
                     <div class="impact-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <div class="impact-number" data-target="500">0</div>
-                    <div class="impact-label">Households Protected</div>
+                    <div class="impact-number" data-target="10000">0</div>
+                    <div class="impact-label">Households to Protect</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <div class="impact-number" data-target="1250">0</div>
-                    <div class="impact-label">Tons CO₂ Avoided</div>
+                    <div class="impact-number" data-target="50000">0</div>
+                    <div class="impact-label">Tons CO₂ to Avoid</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-icon">
                         <i class="fas fa-hammer"></i>
                     </div>
-                    <div class="impact-number" data-target="25">0</div>
-                    <div class="impact-label">Projects Funded</div>
+                    <div class="impact-number" data-target="500">0</div>
+                    <div class="impact-label">Projects to Fund</div>
                 </div>
                 <div class="impact-card">
                     <div class="impact-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="impact-number" data-target="15">0</div>
-                    <div class="impact-label">Communities Served</div>
+                    <div class="impact-number" data-target="100">0</div>
+                    <div class="impact-label">Communities to Serve</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring & Evaluation Section -->
+    <section id="monitoring" class="monitoring-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Monitoring, Evaluation & Learning</h2>
+                <p class="section-subtitle">Comprehensive tracking for measurable impact and continuous improvement</p>
+            </div>
+            <div class="mel-grid">
+                <div class="mel-category">
+                    <div class="mel-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Quantitative Metrics</h3>
+                    </div>
+                    <div class="mel-items">
+                        <div class="mel-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Climate kits deployed and maintained</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>$ value of fractional investments raised per project</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>% increase in resilience coverage (flood-proof housing, solar access)</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-globe"></i>
+                            <span>SDG alignment scores by asset</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>GHG emissions avoided or reduced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mel-category">
+                    <div class="mel-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Qualitative Metrics</h3>
+                    </div>
+                    <div class="mel-items">
+                        <div class="mel-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Resident testimonials and behavioral feedback (via app surveys)</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-vote-yea"></i>
+                            <span>Community engagement levels (votes cast, toolkit usage)</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-building"></i>
+                            <span>Policy uptake and replication interest from municipal partners</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Investor trust index and platform satisfaction scores</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mel-category">
+                    <div class="mel-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Collection Tools</h3>
+                    </div>
+                    <div class="mel-items">
+                        <div class="mel-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Smart sensors (water, solar, flood risk)</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-satellite"></i>
+                            <span>Satellite & GIS data overlays</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-link"></i>
+                            <span>Blockchain-enabled investment logs</span>
+                        </div>
+                        <div class="mel-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Feedback APIs from community mobile engagement portal</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -380,10 +481,42 @@
     <section id="team" class="team-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Team</h2>
-                <p class="section-subtitle">Passionate experts driving climate resilience innovation</p>
+                <h2 class="section-title">Roles & Delivery Partners</h2>
+                <p class="section-subtitle">Specialized teams and strategic partnerships for comprehensive implementation</p>
             </div>
             <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Platform Team</h3>
+                    <p class="member-role">Technology Infrastructure</p>
+                    <p class="member-bio">Develops tech infrastructure, manages tokenized asset logic and user interface</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Kit Production Team</h3>
+                    <p class="member-role">Manufacturing & Distribution</p>
+                    <p class="member-bio">Manufactures and distributes modular climate kits with local job creation</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Government & NGO Partners</h3>
+                    <p class="member-role">Regulatory & Procurement</p>
+                    <p class="member-bio">Facilitate land use, procurement, and regulatory alignment</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Liaisons</h3>
+                    <p class="member-role">Community Engagement</p>
+                    <p class="member-bio">Support trust-building, feedback collection, and co-governance voting</p>
+                </div>
                 <div class="team-member">
                     <div class="member-avatar">
                         <i class="fas fa-user"></i>
@@ -400,37 +533,306 @@
                     <p class="member-role">Co-Founder & CTO</p>
                     <p class="member-bio">Blockchain architect specializing in tokenized infrastructure</p>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scaling & Financial Sustainability Section -->
+    <section id="scaling" class="scaling-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Scaling & Financial Sustainability</h2>
+                <p class="section-subtitle">Multi-sector pathways for global climate resilience transformation</p>
+            </div>
+            <div class="scaling-grid">
+                <div class="scaling-pathway">
+                    <div class="pathway-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Multi-Sector Scaling Pathways</h3>
                     </div>
-                    <h3>Patricia Huni</h3>
-                    <p class="member-role">Head of Community</p>
-                    <p class="member-bio">Community engagement specialist with grassroots experience</p>
+                    <div class="pathway-items">
+                        <div class="pathway-item">
+                            <div class="pathway-icon public">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <div class="pathway-content">
+                                <h4>Public Sector</h4>
+                                <p>Municipal adoption through co-financing and public resilience plans</p>
+                            </div>
+                        </div>
+                        <div class="pathway-item">
+                            <div class="pathway-icon private">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="pathway-content">
+                                <h4>Private Sector</h4>
+                                <p>Institutional investment via ESG-aligned vehicles, catalytic capital, and green bonds</p>
+                            </div>
+                        </div>
+                        <div class="pathway-item">
+                            <div class="pathway-icon community">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="pathway-content">
+                                <h4>Community Sector</h4>
+                                <p>Micro-investments and voting from citizens using tokenized fractional ownership</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <i class="fas fa-user"></i>
+                <div class="scaling-pathway">
+                    <div class="pathway-header">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h3>Digital + Physical Hybrid Growth</h3>
                     </div>
-                    <h3>Karim Soliman</h3>
-                    <p class="member-role">Impact Analyst</p>
-                    <p class="member-bio">Data scientist focused on climate resilience metrics</p>
+                    <div class="pathway-description">
+                        <p>Climate kits expand physically in cities, while the platform scales digitally with low marginal cost. Modular kits are locally manufactured to reduce logistics overhead and promote circular economies.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <i class="fas fa-user"></i>
+                <div class="scaling-pathway">
+                    <div class="pathway-header">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Revenue Streams & Financial Resilience</h3>
                     </div>
-                    <h3>Rim Cherkti</h3>
-                    <p class="member-role">Operations Lead</p>
-                    <p class="member-bio">Project management expert in climate adaptation</p>
+                    <div class="revenue-items">
+                        <div class="revenue-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Investment facilitation fee per transaction</span>
+                        </div>
+                        <div class="revenue-item">
+                            <i class="fas fa-star"></i>
+                            <span>Premium placement of large-scale infrastructure on marketplace</span>
+                        </div>
+                        <div class="revenue-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data licensing and impact dashboard subscriptions for city stakeholders</span>
+                        </div>
+                        <div class="revenue-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education kits and civic capacity-building programs bundled with resilience products</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <i class="fas fa-user"></i>
+                <div class="scaling-pathway">
+                    <div class="pathway-header">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Ecosystem Integration</h3>
                     </div>
-                    <h3>Lala Aghayeva</h3>
-                    <p class="member-role">Partnership Director</p>
-                    <p class="member-bio">Strategic partnerships in climate finance and NGOs</p>
+                    <div class="integration-items">
+                        <div class="integration-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Aligned with SDGs 11, 13, 10, and 17</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Compliant with Sendai Framework and Paris Agreement targets</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Compatible with climate finance instruments (Green Climate Fund, adaptation grants)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Communities & Investors</h2>
+                <p class="section-subtitle">Real stories from our early adopters and pilot communities</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"ResiFund's approach to climate finance is revolutionary. The transparency and community involvement make it a game-changer for sustainable development."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23667eea'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='white' font-size='30' font-family='Arial'%3EDR%3C/text%3E%3C/svg%3E" alt="Dr. Sarah Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Sarah Chen</h4>
+                            <p>Climate Finance Expert, World Bank</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Finally, a platform that puts communities at the center of climate adaptation. The $10 minimum makes it accessible to everyone."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2310b981'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='white' font-size='30' font-family='Arial'%3EMR%3C/text%3E%3C/svg%3E" alt="Maria Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <p>Community Leader, Manila</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The transparency and real-time impact tracking give me confidence in my investments. This is the future of sustainable finance."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f59e0b'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='white' font-size='30' font-family='Arial'%3EJT%3C/text%3E%3C/svg%3E" alt="James Thompson">
+                        </div>
+                        <div class="author-info">
+                            <h4>James Thompson</h4>
+                            <p>Impact Investor, Green Capital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey to Scale</h2>
+                <p class="section-subtitle">Strategic milestones for global climate resilience</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Months 1-3</div>
+                        <h3>Phase 1: Foundation & Pilot Preparation</h3>
+                        <p>Community onboarding, climate risk assessment, baseline data collection for 2-3 city deployments in flood zones</p>
+                        <div class="timeline-status">Current Focus</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Months 4-6</div>
+                        <h3>Kit Deployment & Tokenization</h3>
+                        <p>Deploy first climate kits (solar, water, housing), launch tokenized investment platform with real-time tracking</p>
+                        <div class="timeline-status">Next Phase</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Months 7-12</div>
+                        <h3>Impact Tracking & Community Feedback</h3>
+                        <p>Real-time impact monitoring, community feedback loops, stakeholder reporting, and pilot optimization</p>
+                        <div class="timeline-status">Planned</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Phase 2</div>
+                        <h3>Regional Expansion</h3>
+                        <p>Scale to 10+ cities using pilot feedback data, establish local manufacturing partnerships</p>
+                        <div class="timeline-status">Future</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Phase 3</div>
+                        <h3>Global Partnerships</h3>
+                        <p>Expansion into climate-vulnerable countries through development banks, UN-Habitat, and ICLEI cities network</p>
+                        <div class="timeline-status">Vision</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunity Section -->
+    <section class="investment-section">
+        <div class="container">
+            <div class="investment-content">
+                <div class="investment-text">
+                    <h2 class="section-title">Investment Opportunity</h2>
+                    <p class="investment-description">
+                        Join us in revolutionizing climate finance. We're seeking strategic investors to scale our platform and accelerate global climate resilience.
+                    </p>
+                    <div class="investment-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>$1.3T Market Opportunity</h4>
+                                <p>Massive underserved climate adaptation market</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Market Validation</h4>
+                                <p>Strong community interest and partnership opportunities identified</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Risk Mitigation</h4>
+                                <p>Diversified portfolio with transparent impact tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="investment-visual">
+                    <div class="investment-card">
+                        <div class="card-header">
+                            <h3>Funding Round</h3>
+                            <div class="round-badge">Seed</div>
+                        </div>
+                        <div class="funding-details">
+                            <div class="funding-item">
+                                <span class="label">Target Raise</span>
+                                <span class="value">$500K</span>
+                            </div>
+                            <div class="funding-item">
+                                <span class="label">Valuation</span>
+                                <span class="value">$3M</span>
+                            </div>
+                            <div class="funding-item">
+                                <span class="label">Use of Funds</span>
+                                <span class="value">MVP Development</span>
+                            </div>
+                        </div>
+                        <div class="investor-cta">
+                            <button class="primary-button">
+                                <i class="fas fa-handshake"></i>
+                                Partner With Us
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -503,7 +905,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ResiFund. All rights reserved.</p>
+                <p>&copy; 2025 ResiFund. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
@@ -512,6 +914,58 @@
             </div>
         </div>
     </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login to ResiFund</h2>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="primary-button full-width">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'signupModal')">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join ResiFund</h2>
+                <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            </div>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="primary-button full-width">Sign Up</button>
+                <p class="auth-switch">Already have an account? <a href="#" onclick="switchModal('signupModal', 'loginModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
